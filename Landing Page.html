@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Navigation styles */
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            background-color: #555;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        /* Main content section */
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+
+        /* Flexbox for main content */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 30%;
+        }
+
+        /* Main content area styles */
+        .main {
+            width: 65%;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 36px; letter-spacing: 2px;">Welcome to Our Landing Page</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <h2 style="font-size: 24px; color: #333;">Why Create a Landing Page?</h2>
+        <p style="font-size: 16px; color: #555;">Creating a landing page is a great beginner project for web development. All you need is some basic knowledge of HTML and CSS. This project helps you learn how to organize content into columns, sections, headers, and footers. You'll also learn about arranging items and making everything look nice with colors, spacing, and boxes. The key is to be creative and pay attention to details like alignment and padding. Just remember to keep an eye on your CSS so things don't overlap. Basically, building a landing page is a fun way to practice your HTML and CSS skills while making something cool and easy to use.</p>
+    </section>
+    <section class="main-content">
+        <div class="sidebar">
+            <h3>About Us</h3>
+            <p>We are dedicated to providing excellent web development services.</p>
+        </div>
+        <div class="main">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Web Design</li>
+                <li>Frontend Development</li>
+                <li>Backend Development</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p style="font-size: 14px;">&copy; 2024 Landing Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
