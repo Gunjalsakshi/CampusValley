@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakshi Gunjal's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         /* Resetting default browser styles */
         body, h1, h2, h3, p, ul, li {
@@ -13,10 +14,11 @@
 
         /* Setting up base font and background */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f0f0;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
         /* Container to center content */
@@ -32,22 +34,10 @@
             color: #fff;
             padding: 20px 0;
             text-align: center;
-            position: relative;
         }
 
         header h1 {
             font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            border: 3px solid #fff;
         }
 
         /* Navigation styles */
@@ -79,6 +69,46 @@
             padding: 20px;
             background-color: #fff;
             border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Card styles */
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        /* Skills and Extra-curricular list */
+        .skills-list, .extra-curricular-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+        .skills-list li, .extra-curricular-list li {
+            flex: 1 1 45%;
+            margin: 5px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .links-list p {
+            margin-bottom: 10px;
         }
 
         /* Footer styles */
@@ -89,61 +119,37 @@
             padding: 10px 0;
         }
 
-        /* Card styles */
-        .card {
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
+        footer p {
+            margin: 0;
         }
 
-        .card h3 {
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            margin-bottom: 10px;
-        }
-
-        /* Additional styles for enhanced look */
-        .highlight {
-            color: #e74c3c;
-        }
-
-        .card p a {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        .card p a:hover {
-            text-decoration: underline;
-        }
-
-        .contact-info {
+        /* Social media icons */
+        .social-icons {
             margin-top: 10px;
-            font-size: 14px;
         }
 
-        .skills-list, .extra-curricular-list {
-            display: flex;
-            flex-wrap: wrap;
+        .social-icons a {
+            color: #333;
+            font-size: 20px;
+            margin-right: 10px;
+            transition: color 0.3s ease;
         }
 
-        .skills-list li, .extra-curricular-list li {
-            flex: 1 1 45%;
-            margin-bottom: 10px;
+        .social-icons a:hover {
+            color: #3498db;
         }
 
-        .links-list p {
-            margin-bottom: 10px;
+        /* Hover effects */
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Sakshi Gunjal's Portfolio</h1>
-        <img src="your-image.jpg" alt="Sakshi Gunjal's Photo">
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -160,8 +166,14 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="card">
-                <p> Passionate and Dedicated individual with a keen interest in Web Development and Programming. Loves to Explore New Technologies and Solve Challenging Problems.</p>
-                <p class="contact-info">Contact: gunjalsakshi09@gmail.com | 9309147815<br>Location: Nashik, Maharashtra, India</p>
+                <p>Passionate and dedicated individual with a keen interest in Web Development and Programming. Loves to explore new technologies and solve challenging problems.</p>
+                <p>Contact: gunjalsakshi09@gmail.com | 9309147815</p>
+                <p>Location: Nashik, Maharashtra, India</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sakshi-gunjal" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/gunjalsakshi" target="_blank"><i class="fab fa-github"></i></a>
+                    <!-- Add more social icons as needed -->
+                </div>
             </div>
         </section>
 
@@ -169,7 +181,7 @@
             <h2>Education</h2>
             <div class="card">
                 <h3>K.T.H.M College</h3>
-                <p>Bachelor of Computer Applications | Aug 2021 - June 2024<br>GPA: 6.64</p>
+                <p>Bachelor of Computer Applications | Aug 2021 - June 2024<br>GPA: 6.65</p>
             </div>
             <div class="card">
                 <h3>Bytco College</h3>
@@ -185,7 +197,7 @@
             <h2>Projects</h2>
             <div class="card">
                 <h3>Creative Scrapyard</h3>
-                <p>Designed and developed an innovative e-commerce platform called <span class="highlight">"Creative Scrapyard"</span> for selling handmade items made from recycled materials. Incorporated advanced features such as user authentication, product recommendation system, order tracking, and payment processing.</p>
+                <p>Designed and developed an innovative e-commerce platform called "Creative Scrapyard" for selling handmade items made from recycled materials. Incorporated advanced features such as user authentication, product recommendation system, order tracking, and payment processing.</p>
                 <p>Technologies/tools used: HTML, CSS, JavaScript, Bootstrap, PHP, MySQL.</p>
             </div>
             <div class="card">
@@ -220,8 +232,8 @@
         <section id="links">
             <h2>Important Links</h2>
             <div class="card links-list">
-                <p><a href="https://www.linkedin.com/in/sakshi-gunjal">LinkedIn: Sakshi Gunjal</a></p>
-                <p><a href="https://github.com/gunjalsakshi">GitHub: Gunjalsakshi</a></p>
+                <p><a href="https://www.linkedin.com/in/sakshi-gunjal" target="_blank">LinkedIn: Sakshi Gunjal</a></p>
+                <p><a href="https://github.com/gunjalsakshi" target="_blank">GitHub: Gunjalsakshi</a></p>
                 <p><a href="#">Portfolio: Gunjalsakshi09</a></p>
             </div>
         </section>
@@ -232,5 +244,9 @@
             <p>&copy; 2024 Sakshi Gunjal's Portfolio. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
 </html>
+ 
