@@ -11,8 +11,8 @@ This repository includes beginner-friendly projects to demonstrate fundamental *
 
 ## 🔧 Technologies Used
 - **HTML**
-- **CSS** (if applicable)
-- **JavaScript** (if applicable)
+- **CSS** 
+- **JavaScript** 
 
 ## 🚀 How to Run
 1. Clone the repository:
